@@ -1,6 +1,7 @@
 # PDF Comparison Project
 
-Este projeto utiliza Cypress com BDD (Cucumber) e TypeScript para automatizar testes de comparação entre arquivos PDF. A comparação ocorre em três níveis:
+Este projeto utiliza Cypress com BDD (Cucumber) e TypeScript para chamar atraves do cy.task() o Node.js e executar a lógica de comparação entre arquivos PDF.
+A comparação ocorre em três níveis:
 
 1. **Texto:** conteúdo textual exato entre os PDFs.
 2. **Metadados:** informações embutidas como autor, título, data, etc.
@@ -11,13 +12,12 @@ Este projeto utiliza Cypress com BDD (Cucumber) e TypeScript para automatizar te
 ## 📁 Estrutura de Pastas
 
 pdfs/
-├── base/ → PDF original de referência (ex: baseFile.pdf)
-├── compare/ → PDF a ser comparado (ex: actualFile.pdf)
-└── diff/ → Geração automática de arquivos de diferença:
-├── visual-diff.png → Imagem com destaque das alterações visuais
-├── text-diff.txt → Alterações encontradas no conteúdo textual
-└── meta-diff.json → Alterações nos metadados
-
+- base/ → PDF original de referência (ex: baseFile.pdf)
+- compare/ → PDF a ser comparado (ex:validActualFile.pdf)
+- diff/ → Geração automática de arquivos de diferença:
+--> visual-diff.png → Imagem com destaque das alterações visuais
+--> text-diff.txt → Alterações encontradas no conteúdo textual
+--> meta-diff.json → Alterações nos metadados
 
 ---
 
