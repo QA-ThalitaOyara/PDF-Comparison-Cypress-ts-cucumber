@@ -1,0 +1,27 @@
+
+---
+
+## 🙈 `.gitignore`
+
+```gitignore
+# Node modules
+node_modules/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Root Files
+package-lock.json
+cucumber-report.html
+
+# Cypress
+cypress/screenshots/
+cypress/videos/
+
+# Ambiente
+.env
+.env.local
+
+# PDF diff outputs
+pdfs/diff/

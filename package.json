@@ -1,0 +1,51 @@
+{
+  "name": "cypress-pdf-comparison",
+  "version": "1.0.0",
+  "description": "Projeto para comparação de PDFs usando Cypress e Python",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test": "npm run cy:run",
+    "install:python:deps": "pip install -r requirements.txt",
+    "setup": "npm install && npm run install:python:deps",
+    "generate:report": "node cypress/utils/reportGenerator.js"
+  },
+  "keywords": [
+    "cypress",
+    "pdf",
+    "comparison",
+    "python",
+    "testing"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^13.17.0",
+    "fs-extra": "^11.2.1",
+    "path": "^0.12.7"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^23.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.5",
+    "@types/pngjs": "^6.0.5",
+    "canvas": "^3.2.0",
+    "diff": "^8.0.2",
+    "pdf-lib": "^1.17.1",
+    "pdf-parse": "^1.1.1",
+    "pdfjs-dist": "^5.4.149",
+    "pdfjs-dist-legacy": "^1.0.1",
+    "pixelmatch": "^7.1.0",
+    "pngjs": "^7.0.0",
+    "typescript": "^5.9.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": [
+      "cypress/e2e/**/*steps.ts"
+    ],
+    "html": {
+      "enabled": true
+    }
+  }
+}
