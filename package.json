@@ -31,7 +31,6 @@
     "@types/pngjs": "^6.0.5",
     "canvas": "^3.2.0",
     "diff": "^8.0.2",
-    "pdf-lib": "^1.17.1",
     "pdf-parse": "^1.1.1",
     "pdfjs-dist": "^5.4.149",
     "pdfjs-dist-legacy": "^1.0.1",
