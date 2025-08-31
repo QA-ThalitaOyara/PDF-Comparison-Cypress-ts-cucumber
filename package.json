@@ -28,7 +28,6 @@
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^23.0.0",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.5",
-    "@types/pngjs": "^6.0.5",
     "canvas": "^3.2.0",
     "diff": "^8.0.2",
     "pdf-parse": "^1.1.1",
@@ -44,7 +43,7 @@
       "cypress/e2e/**/*steps.ts"
     ],
     "html": {
-      "enabled": true
+      "enabled": false
     }
   }
 }
